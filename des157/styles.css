@@ -38,6 +38,12 @@ h2 {
     font-weight: bold;
 }
 
+h3 {
+    text-align: center;
+    color: rosybrown;
+    font-weight: normal;
+}
+
 ol {
     display: block;
     list-style-type: decimal;
