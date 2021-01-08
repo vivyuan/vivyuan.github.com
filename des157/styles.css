@@ -48,12 +48,9 @@ h3 {
     font-weight: normal;
 }
 
-ol {
+li {
     display: block;
     list-style-type: none;
-}
-
-ol li {
     display: run-in;
     background: red;
     padding: 5px 10px;
