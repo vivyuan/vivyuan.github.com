@@ -2,12 +2,9 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     align-content: center;
     background-color: #f2f2f2;
-    margin: auto;
+    /* margin: auto; */
 }
 
-/* main {
-    display: block;
-} */
 
 #banner {
     grid-row: 2;
@@ -16,7 +13,7 @@ body {
     height: 250px;
 }
 
-#container {
+main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
