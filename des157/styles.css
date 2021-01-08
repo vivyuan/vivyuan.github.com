@@ -16,7 +16,7 @@ body {
     background-color: black;
     color: #fff;
     transition-property:inherit;
-    transition-duration: 3s;
+    transition-duration: 2s;
 }
 
 
@@ -81,13 +81,15 @@ h1 {
     text-align: center;
     color: black;
     font-weight: bolder;
+    margin-top: 20px;
 }
 
 h2 {
     font-size: 2em;
     color: black;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
+    margin-left: 75px;;
 }
 
 
@@ -96,7 +98,9 @@ li {
     list-style-type: none;
     background: none;
     padding: 5px;
-    transition: .8s;
+    transition: 1.5s;
+    text-align: left;
+    margin-left: 70px;
 }
 
 a {
