@@ -50,13 +50,10 @@ h3 {
 }
 
 li {
-    display: block;
     list-style-type: none;
-    display: run-in;
     background: red;
-    padding: 5px 10px;
-    margin: 5px 0;
-    transition: .5s;
+    padding: 5px;
+    transition: .8s;
 }
 
 .a {
