@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Experimentation</title>
+</head>
+<body>
+    <h1>Viv Fuctions & DOM Experimentation</h1>
+
+    <script>
+        // my program ask for user's age and then ask if users want to live in the listed cities.
+
+
+        var userAge =prompt('What is your age?', '');
+        var userLocation = ['Los Angeles', 'NYC', 'Miami', 'Shanghai'];
+
+        function yourAge(userAge){
+
+            var greeting;
+
+            if (userAge == null || userAge == ''){
+                greeting = "You did not enter your age";
+            } else {
+                greeting = `Your age is ${userAge}`;
+            }
+
+            return greeting;
+        }
+
+
+        function hospitality(userAge, userLocation) {
+            
+            console.log(yourAge(userAge));
+
+            for (var i=0; i<userLocation.length; i++) {
+                console.log(`Your are ${userAge} years old, would you like to live in ${userLocation[i]}?`);
+            }
+        }
+
+        hospitality(userAge, userLocation);
+
+        
+    </script>
+</body>
+</html>
