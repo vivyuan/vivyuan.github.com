@@ -1,36 +1,57 @@
 body {
-    font-family: 'Roboto Mono', monospace;
-    background-color: pink;
+    font-family: 'Maven Pro', sans-serif;
+    background: linear-gradient(#e4bcd5,#AB9D87,#E2D9D3);
+    height: 1200px;
 }
 
 main {
     margin: auto;
     padding: auto;
     text-align: center;
-    background-color:whitesmoke;
+    background-color: rgba(255, 255, 255, 0.2);
     width: 800px;
-    height: auto;
-    
+    height: 768px; 
 }
 
 
 h1{
-    font-size: 4rem;;
+    font-size: 5rem;;
     padding: 80px;
     text-align: center;
+    color: darkolivegreen;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+}
+
+a:hover {
+    color: black;
 }
 
 h2 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: left;
-    color: blue;
+    color: #BD4258;
+}
+
+h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: brown; 
+    padding-bottom: 10px;
 }
 
 p {
+    font-size: 1.1rem;
     text-align: left;
+    color:#290A0D;
+    line-height: 25px;
+    
 }
 
 article {
     padding:50px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
