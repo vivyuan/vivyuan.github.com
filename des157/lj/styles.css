@@ -24,6 +24,7 @@ h1{
 a {
     text-decoration: none;
     color: brown;
+    text-align: center;
 }
 
 a:hover {
@@ -54,4 +55,8 @@ p {
 article {
     padding:50px;
     padding-bottom: 50px;
+}
+
+footer {
+    padding-top: 80px;
 }
