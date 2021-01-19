@@ -6,9 +6,11 @@ body {
 #banner {
     grid-row: 2;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 6;
     width: 800px;
     height: 250px;
+    align-items: center;
+    padding-left: 50px;;
 }
 
 #banner div{
@@ -58,21 +60,20 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     max-width: 1200px;
     min-width: 800px;
-    align-content: center;
-    margin: auto;
 }
 
 header {
     grid-row: 1;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    padding-left: 5rem;
-    padding-bottom: 1rem;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    /* padding-left: 5rem; */
+    padding-bottom: 5rem;
     display: block;
+    justify-content: center;
 }
 
 h1 {
@@ -84,11 +85,18 @@ h1 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     color: black;
     font-weight: bold;
     text-align: left;
-    margin-left: 75px;;
+    margin-left: 75px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
+    text-align: center;
 }
 
 
@@ -113,29 +121,29 @@ a:hover {
 
 .a {
     grid-row: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    text-align: center;
-}
-
-.b {
-    grid-row: 3;
     grid-column-start: 2;
     grid-column-end: 3;
     text-align: center;
 }
 
-.c {
+.b {
     grid-row: 3;
     grid-column-start: 3;
     grid-column-end: 4;
     text-align: center;
 }
 
+.c {
+    grid-row: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    text-align: center;
+}
+
 footer {
     padding-top: 80px;
     grid-row: 4;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 6;
     text-align: center;
 }

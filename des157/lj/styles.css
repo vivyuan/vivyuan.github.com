@@ -1,0 +1,36 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: pink;
+}
+
+main {
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    background-color:whitesmoke;
+    width: 800px;
+    height: auto;
+    
+}
+
+
+h1{
+    font-size: 4rem;;
+    padding: 80px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1rem;
+    text-align: left;
+    color: blue;
+}
+
+p {
+    text-align: left;
+}
+
+article {
+    padding:50px;
+    padding-bottom: 80px;
+}
