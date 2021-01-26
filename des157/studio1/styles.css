@@ -1,0 +1,29 @@
+body {
+    max-width: 1366px;
+    max-height: 768px;
+    background-color: chocolate;
+}
+
+main {
+    display: block;
+    margin-left: 36%;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;;
+    margin-bottom: 50px;
+}
+
+label, input {
+    display: block;
+    color: blue;
+    margin-bottom: 10px;;
+}
+
+input {
+    margin-bottom: 50px;
+    width: 250px;
+    height: 50px;
+}
