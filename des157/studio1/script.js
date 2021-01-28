@@ -1,26 +1,31 @@
 (function(){
     'use strict';
 
-    var form1 = document.querySelector('#form1');
-    var article1= document.querySelector('#article1');
-    var eachField= [];
+    const form1 = document.querySelector('#form1');
+    const article1= document.querySelector('#article1');
+    let eachField= [];
 
     form1.addEventListener('submit', function(event){
         event.preventDefault();
-        var noun1 = document.querySelector('#noun1').value;
-        var noun2 = document.querySelector('#noun2').value;
-        var adj = document.querySelector('#adj').value;
-        var verb = document.querySelector('#verb').value;
+        const noun1 = document.querySelector('#noun1').value;
+        const noun2 = document.querySelector('#noun2').value;
+        const adj = document.querySelector('#adj').value;
+        const verb = document.querySelector('#verb').value;
+        const shoes = document.querySelector('#shoes').value;
+        let myResult;
 
-        if(noun1 && noun2 && adj && verb) {
-            var myResult = `Your result: ${noun1}, ${noun2}, ${adj}, ${verb}`;
+        if(noun1 && noun2 && adj && verb && shoes) {
+            myResult = `Yay!  ${noun1} will be wearing a ${noun2} and ${adj} 
+            with some ${verb} to the party. Oh! by the way, ${noun1} is going to 
+            put on some ${shoes} before leaving to the party.`;
         } else {
-            var myResult = "You must fill the blanks to receive your result";
+            myResult = "You must get ready for the party.";
         }
 
-        article1.innerHTML = myResult;
+        article1.innerHTML =   `<p>${myResult}</p>`;
 
-        var formData = document.querySelectorAll("input[type=text]");
+        const formData = document.querySelectorAll("input[type=text]");
+        
         for(eachField of formData) {
             eachField.value = "";
         }
