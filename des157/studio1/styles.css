@@ -4,8 +4,6 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-/* Add Media @*/
-
 main {
     max-height: 768px;
     display:grid;
