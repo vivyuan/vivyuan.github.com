@@ -1,21 +1,21 @@
 body {
     font-family: 'Varela', sans-serif;
-    background-color: #f2f2f2;
+    background-color: #dddddd;
 }
 
 #banner {
+    padding-top: 50px;
     grid-row: 2;
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 4;
     width: 800px;
     height: 250px;
-    align-items: center;
-    padding-left: 50px;;
+    margin-left: 16.5%;
 }
 
 #banner div{
-    background-color: black;
-    color: #fff;
+    background-color: #1F2326;
+    color: #dddddd;
     transition-property:inherit;
     transition-duration: 1.5s;
 }
@@ -24,6 +24,7 @@ body {
 #banner div:hover {
     width: 400px;
     cursor: pointer;
+
 }
 
 #banner1 {
@@ -59,8 +60,9 @@ body {
 }
 
 main {
+    margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     max-width: 1200px;
     min-width: 800px;
@@ -68,33 +70,32 @@ main {
 
 header {
     grid-row: 1;
-    grid-column-start: 2;
-    grid-column-end: 6;
-    /* padding-left: 5rem; */
+    grid-column-start: 1;
+    grid-column-end: 4;
     padding-bottom: 5rem;
     display: block;
     justify-content: center;
+    margin-top: 70px;
 }
 
 h1 {
     font-size: 5em;
     text-align: center;
-    color: black;
+    color: #1F2326;
     font-weight: bolder;
     margin-top: 20px;
 }
 
 h2 {
     font-size: 1.5em;
-    color: black;
+    color: #1F2326;
     font-weight: bold;
-    text-align: left;
-    margin-left: 75px;
+    text-align: center;
 }
 
 h3 {
     font-size: 1.5em;
-    color: black;
+    color: #1F2326;
     font-weight: bold;
     text-align: center;
 }
@@ -106,8 +107,7 @@ li {
     background: none;
     padding: 5px;
     transition: 1.5s;
-    text-align: left;
-    margin-left: 70px;
+    text-align: center;
 }
 
 a {
@@ -116,28 +116,25 @@ a {
 }
 
 a:hover {
-    color: black;
+    color: #1F2326;
 }
 
 .a {
     grid-row: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 
 .b {
     grid-row: 3;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;  
 }
 
 .c {
     grid-row: 3;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 
 footer {
