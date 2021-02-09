@@ -1,0 +1,96 @@
+body {
+    height: 768px;
+    background: lightskyblue;
+}
+
+h1 {
+    font-size: 72px;
+    text-align: center;
+}
+
+div {
+    width: 1366px;
+    height: auto; 
+    text-align: center;
+    background: chocolate;
+}
+
+#myGlasses {
+    display: flex;
+    flex-direction: row;
+    margin-top: 400px;
+}
+
+
+@media only screen and (max-width: 1500px) {
+
+    div {
+        width: 740px;
+        height: 250px;
+    }
+
+    #myGlasses {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        margin-top: 200px;
+        margin-right: 10%;
+    }
+
+    #firstGlasses div {
+        grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #secondGlasses div {
+        grid-row: 1;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    #thirdGlasses div {
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #fourthGlasses div {
+        grid-row: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    #fifthGlasses div {
+        grid-row: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-left: 50%;
+    }
+
+    img {
+        width: 50%;
+    }
+
+
+   
+}
+
+@media only screen and (max-width: 1300px) {
+
+    div {
+        width: auto;
+    }
+
+    #myGlasses {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    img {
+        width:50%
+    }
+
+}
+
