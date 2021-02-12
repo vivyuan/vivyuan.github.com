@@ -9,30 +9,68 @@
 <body>
     <h1>My Sunglasses Collection</h1>
 
-    <h2>Delet this later</h2>
+    <main>
+        <section id="mySelfie"> 
+                                <!-- //This section is the main slideshow after user click on the items -->
+            <!-- <div id="mainSelfie">
+                <img id="firstSlide" src="images/mm.png" alt="firstSlide" width="800px">
+            </div> -->
 
-    <section id="myGlasses">
-        <div id="firstGlasses"> 
-            <img id="firstItem" src="images/1.png" alt="firstItem" width="280">
-        </div>
+            <div id="changingImage"></div>
 
-        <div id="secondGlasses"> 
-            <img id="secondItem" src="images/2.png" alt="secondItem" width="280">
-        </div>
+            <!-- <div id="firstSelfie">
+                <img id="secondSlide" src="images/m1.png" alt="secondSlide" width="800px">
+            </div>
 
-        <div id="thirdGlasses"> 
-            <img id="thirdItem" src="images/3.png" alt="thirdItem" width="310">
-        </div>
+            <div id="secondSelfie">
+                <img id="thirdSlide" src="images/m2.png" alt="thirdSlide" width="800px">
+            </div>
+            
+            <div id="thirdSelfie">
+                <img id="fourthSlide" src="images/m3.png" alt="fourthSlide" width="800px">
+            </div>
 
-        <div id="fouthGlasses"> 
-            <img id="fourthItem" src="images/4.png" alt="fourthItem" width="250">
-        </div>
+            <div id="fourthSelfie">
+                <img id="fifthSlide" src="images/m4.png" alt="fifthSlide" width="800px">
+            </div>
 
-        <div id="fifthGlasses"> 
-            <img id="fifthItem" src="images/5.png" alt="fifthItem" width="280">
-        </div>
+            <div id="fifthSelfie">
+                <img id="sixthSlide" src="images/m5.png" alt="sixthSlide" width="800px">
+            </div> -->
+
+            <button id="previous">previous</button>
+            <button id="next">next</button>
+
+        </section>
+
+        <section id="myGlasses">
+                                <!-- //This section has the items that users can interact -->
+            <div id="firstGlasses"> 
+                <img onclick="change1()" id="firstItem" src="images/1.png" alt="firstItem" width="250px">
+            </div>
+
+            <div id="secondGlasses"> 
+                <img onclick="change2()" id="secondItem" src="images/2.png" alt="secondItem" width="250px">
+            </div>
+
+            <div id="thirdGlasses"> 
+                <img onclick="change3()" id="thirdItem" src="images/3.png" alt="thirdItem" width="280px">
+            </div>
+
+            <div id="fouthGlasses"> 
+                <img onclick="change4()" id="fourthItem" src="images/4.png" alt="fourthItem" width="220px">
+            </div>
+
+            <div id="fifthGlasses"> 
+                <img onclick="change5()" id="fifthItem" src="images/5.png" alt="fifthItem" width="250px">
+            </div>
 
 
-    </section>
+        </section>
+    </main>
+    
 </body>
+
+<script src="scripts.js"></script>
+
 </html>

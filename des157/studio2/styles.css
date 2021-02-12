@@ -3,26 +3,70 @@ body {
     background: lightskyblue;
 }
 
+main {
+    width: 100%;
+    background: red;
+}
+
 h1 {
     font-size: 72px;
     text-align: center;
 }
 
 div {
-    width: 1366px;
-    height: auto; 
+    margin:auto;
     text-align: center;
     background: chocolate;
 }
 
-#myGlasses {
-    display: flex;
-    flex-direction: row;
-    margin-top: 400px;
+#previous {
+    margin-left: 40%;
+}
+
+#next {
+    margin-left: 10%;
 }
 
 
-@media only screen and (max-width: 1500px) {
+#mySelfie{
+    display: block;
+    margin-top: 100px;
+}
+
+#myGlasses {
+    display: flex;
+    margin-top: 100px;
+}
+
+#firstItem:hover {
+    filter:grayscale(100%);
+    transform: scale(1.1);
+}
+
+#secondItem:hover {
+    filter:grayscale(100%);
+    transform: scale(1.1);
+}
+
+#thirdItem:hover {
+    filter:grayscale(100%);
+    transform: scale(1.1);
+}
+
+#fourthItem:hover {
+    filter:grayscale(100%);
+    transform: scale(1.1);
+}
+
+#fifthItem:hover {
+    filter:grayscale(100%);
+    transform: scale(1.1);
+}
+
+
+
+
+/* @media only screen and (max-width: 1500px) {
 
     div {
         width: 740px;
@@ -71,9 +115,7 @@ div {
     img {
         width: 50%;
     }
-
-
-   
+  
 }
 
 @media only screen and (max-width: 1300px) {
@@ -92,5 +134,5 @@ div {
         width:50%
     }
 
-}
+} */
 
