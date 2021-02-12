@@ -1,11 +1,10 @@
 body {
-    height: 768px;
-    background: lightskyblue;
+    background: lightpink;
 }
 
 main {
     width: 100%;
-    background: red;
+    height: 768px;
 }
 
 h1 {
@@ -16,123 +15,81 @@ h1 {
 div {
     margin:auto;
     text-align: center;
-    background: chocolate;
-}
-
-#previous {
-    margin-left: 40%;
-}
-
-#next {
-    margin-left: 10%;
 }
 
 
 #mySelfie{
-    display: block;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 #myGlasses {
     display: flex;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 #firstItem:hover {
     filter:grayscale(100%);
-    transform: scale(1.1);
+    transform: scale(1.3);
+    transition: all 0.3s ease;
 }
 
 #secondItem:hover {
     filter:grayscale(100%);
-    transform: scale(1.1);
+    transform: scale(1.3);
+    transition: all 0.3s ease;
 }
 
 #thirdItem:hover {
     filter:grayscale(100%);
-    transform: scale(1.1);
+    transform: scale(1.3);
+    transition: all 0.3s ease;
 }
 
 #fourthItem:hover {
     filter:grayscale(100%);
-    transform: scale(1.1);
+    transform: scale(1.3);
+    transition: all 0.3s ease;
 }
 
 #fifthItem:hover {
     filter:grayscale(100%);
+    transform: scale(1.3);
+    transition: all 0.3s ease;
+}
+
+#changingImage:hover {
+    filter:saturate(1.5);
     transform: scale(1.1);
+    transition: all 0.3s ease;
 }
 
 
 
-
-/* @media only screen and (max-width: 1500px) {
-
-    div {
-        width: 740px;
-        height: 250px;
-    }
-
-    #myGlasses {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        margin-top: 200px;
-        margin-right: 10%;
-    }
-
-    #firstGlasses div {
-        grid-row: 1;
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-
-    #secondGlasses div {
-        grid-row: 1;
-        grid-column-start: 2;
-        grid-column-end: 3;
-    }
-
-    #thirdGlasses div {
-        grid-row: 2;
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-
-    #fourthGlasses div {
-        grid-row: 2;
-        grid-column-start: 2;
-        grid-column-end: 3;
-    }
-
-    #fifthGlasses div {
-        grid-row: 3;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        margin-left: 50%;
-    }
-
-    img {
-        width: 50%;
-    }
-  
-}
 
 @media only screen and (max-width: 1300px) {
 
-    div {
-        width: auto;
+    main {
+        width: 1300x;
+        height: auto;
     }
 
     #myGlasses {
-        display: flex;
-        flex-wrap: wrap;
-        margin: auto;
+        display:flex;
+        flex-wrap:nowrap;
+        margin-top: 80px;
+    }
+
+    #changingImage {
+        width:70%;
     }
 
     img {
-        width:50%
+        width: 90%;
     }
 
-} */
+    #thirdItem {
+        width:101%
+    }
+  
+}
 
