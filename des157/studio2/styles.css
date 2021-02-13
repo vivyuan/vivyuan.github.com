@@ -1,3 +1,5 @@
+/* Below are the CSS for the viewport of 1366*768 */
+
 body {
     background: lightcoral;
     font-family: 'Tangerine', cursive;
@@ -5,7 +7,7 @@ body {
 
 main {
     margin:auto;
-    width: 95%;
+    width: 95%; 
     height: 90%;
 }
 
@@ -31,6 +33,10 @@ div {
 #myGlasses {
     display: flex;
 }
+
+
+/* Add interaction effect when mouse hovering over items*/
+/* note that I edited them individually because the effects are different */
 
 #firstItem:hover {
     filter:grayscale(100%);
@@ -83,7 +89,7 @@ a:hover {
 }
 
 
-
+/* I have a larger monitor so I made a larger version for better viewing */
 
 @media only screen and (min-width: 1420px) {
 
@@ -133,6 +139,8 @@ a:hover {
     }
 
 }
+
+/* Add responsive version for smaller screen */
 
 @media only screen and (max-width: 1000px) {
 
