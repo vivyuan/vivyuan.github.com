@@ -1,7 +1,7 @@
 /* Below are the CSS for the viewport of 1366*768 */
 
 body {
-    background: lightcoral;
+    background: #958BD9;
     font-family: 'Tangerine', cursive;
 }
 
@@ -13,11 +13,18 @@ main {
 
 h1 {
     font-size: 78px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     text-align: center;
     font-size: 72px;
-    color: #ffffff;
+    color: #F2F2F2;
+}
+
+h2 {
+    text-align: center;
+    font-size: 16px;
+    margin-top: -30px;
+    margin-bottom: 25px;
+    color: rgba(127, 113, 217);
+    font-family: 'Roboto Mono', monospace;
 }
 
 div {
@@ -37,6 +44,10 @@ div {
 
 /* Add interaction effect when mouse hovering over items*/
 /* note that I edited them individually because the effects are different */
+h2:hover {
+    transition: all 0.3s ease;
+    color: #958BD9;
+}
 
 #firstItem:hover {
     filter:grayscale(100%);
@@ -77,15 +88,16 @@ footer {
     padding-top: 35px;
     text-align: center;
     font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
 }
 
 a {
-    color:white;
+    color:#F2F2F2;
     text-decoration: none;
 }
 
 a:hover {
-    color: lightpink;
+    color: rgba(127, 113, 217)
 }
 
 
@@ -100,7 +112,12 @@ a:hover {
 
     h1 {
         font-size: 120px;
-        padding-top: 20px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+
+    h2 {
+        font-size: 24px;
         padding-bottom: 30px;
     }
 
@@ -134,15 +151,15 @@ a:hover {
     }
 
     footer {
-        padding-top: 50px;
-        font-size: 28px;
+        padding-top: 65px;
+        font-size: 24px;
     }
 
 }
 
 /* Add responsive version for smaller screen */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1300px) {
 
     #myGlasses {
         display: flex;
