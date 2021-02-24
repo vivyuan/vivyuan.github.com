@@ -32,6 +32,7 @@ h2 {
     font-size: 22px;
 }
 
+
 p {
     text-align: left;
     line-height: 1.4em;
@@ -54,4 +55,21 @@ footer {
     text-align: center;
     padding:50px;
 }
+
+
+/* *************CSS for Digital Comp************** */
+
+#dComph2 {
+    text-align: center;
+    color: #049b70;
+    font-size: 36px;
+}
+
+#dCompimg {
+    margin-left: 25%;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+
 
