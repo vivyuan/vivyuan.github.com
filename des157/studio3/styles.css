@@ -1,8 +1,8 @@
 body {
-    background-color:#555e6e;
+    background-color:#272a2e;
     line-height: 1.3em;
     font-family: 'Josefin Sans', sans-serif;
-    color:white;
+    color:whitesmoke;
 }
 
 main {
@@ -15,6 +15,7 @@ main {
     grid-row: 1;
     grid-column-start: 1;
     grid-column-end: 5;
+    background-image: linear-gradient(#404380,#272a2e);
 }
 
 #gamecontrol {
@@ -48,7 +49,8 @@ h1 {
     text-align: center;
     font-family: 'Reggae One', cursive;
     font-size: 48px;
-    padding:15px
+    padding:15px;
+    color: rgb(219, 219, 219);
 }
 
 p {
@@ -70,22 +72,27 @@ button {
 button:hover {
     background-color: #7bd5f5;
     color:black;
+    transform: scale(1.04);
+    transition: all 0.5s;
 }
 
 h2 {
    font-size: 48px;
+   color: #51bfbd;
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 20px;
 }
 
 strong {
     font-size: 16px;
+    color: #4adede;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 24px;
+    color: #999df1;
 }
 
 div {
@@ -108,4 +115,16 @@ a {
 
 a:hover {
     color:#8b90f7;
+}
+
+img {
+    width:100px
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6{
+    font-size: 24px;
 }

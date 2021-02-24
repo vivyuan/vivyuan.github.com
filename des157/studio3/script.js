@@ -7,10 +7,15 @@
 	const game = document.getElementById('game');
 	const score = document.getElementById('score');
 	const actionArea = document.getElementById('actions');
+    const clickSound = new Audio('media/clicksound.mp3');
+    const startSound = new Audio('media/startsound.mp3');
+    const winningSound = new Audio('media/winningsound.mp3');
+
+
 
     const gameData = {
-	dice: ['1die.jpg', '2die.jpg', '3die.jpg', 
-		   '4die.jpg', '5die.jpg', '6die.jpg'],
+	dice: ['images/1die.jpg', 'images/2die.jpg', 'images/3die.jpg', 
+		   'images/4die.jpg', 'images/5die.jpg', 'images/6die.jpg'],
 	players: ['Player A', 'Player B'],
 	score: [0, 0],
 	roll1: 0,
@@ -21,6 +26,7 @@
     };
 
     startGame.addEventListener('click', function(){
+        startSound.play();
         gameData.index = Math.round(Math.random());
         gameControl.innerHTML = '<h2>The Games Has Started</h2>';
         gameControl.innerHTML += '<button id="quit">Restart Game</button>';
@@ -33,10 +39,11 @@
     });
 
     function setUpTurn() { 
-        game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`; 
+        game.innerHTML = `<h5>Roll the dice for the ${gameData.players[gameData.index]}</h5>`; 
         actionArea.innerHTML = '<button id="roll">Roll the Dice</button>'; 
         document.getElementById('roll').addEventListener('click', function(){
             throwDice(); 
+            clickSound.play();
          });
     }
 
@@ -44,7 +51,7 @@
         actionArea.innerHTML = ' '; 
         gameData.roll1 = Math.floor(Math.random() * 6) + 1; 
         gameData.roll2 = Math.floor(Math.random() * 6) + 1; 
-        game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`; 
+        game.innerHTML = `<h5>Roll the dice for the ${gameData.players[gameData.index]}</h5>`; 
         game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}"> 
                             <img src="${gameData.dice[gameData.roll2-1]}">`; 
         gameData.rollSum = gameData.roll1 + gameData.roll2; 
@@ -52,7 +59,7 @@
 
         // if two l's are rolled
         if( gameData.rollSum === 2 ){ 
-            game.innerHTML += '<p>Oh snap! Snake eyes!</p>';
+            game.innerHTML += '<h6>Oh snap! Snake eyes!</h6>';
             gameData.score[gameData.index] = 0; 
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             showCurrentScore();
@@ -61,8 +68,8 @@
         // if either die is a 1 
         else if(gameData.roll1 === 1 || gameData.roll2 === 1){ 
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
-            game.innerHTML += `<p>Sorry, one of your rolls was a one, switching to ${ 
-                gameData.players[gameData.index] }</P>`;
+            game.innerHTML += `<h6>Sorry, one of your rolls was a one, switching to ${ 
+                gameData.players[gameData.index] }</h6>`;
             setTimeout(setUpTurn, 2000);
         } 
         // if neither die is a 1 
@@ -72,11 +79,13 @@
             
             document.getElementById('rollagain').addEventListener('click', function () { 
                 setUpTurn(); 
+                clickSound.play();
             }); 
             
             document.getElementById('pass').addEventListener('click', function () { 
                 gameData.index ? (gameData.index = 0) : (gameData.index = 1); 
                 setUpTurn(); 
+                clickSound.play();
             }); 
 
             checkWinningCondition();
@@ -89,6 +98,7 @@
             score.innerHTML = `<h4>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h4>`; 
             actionArea.innerHTML = ' '; 
             document.getElementById('quit').innerHTML = "Start a New Game?"; 
+            winningSound.play();
         } else { 
             showCurrentScore();
         } 
