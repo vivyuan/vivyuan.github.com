@@ -87,7 +87,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #1F2326;
     font-weight: bold;
     text-align: center;
@@ -104,10 +104,10 @@ h3 {
 
 li {
     list-style-type: none;
-    background: none;
-    padding: 5px;
     transition: 1.5s;
     text-align: center;
+    padding-left: 50px;
+    margin-left: -23%;
 }
 
 a {
