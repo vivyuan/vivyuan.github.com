@@ -59,16 +59,20 @@ footer {
 
 /* *************CSS for Digital Comp************** */
 
+
 #dComph2 {
     text-align: center;
     color: #049b70;
     font-size: 36px;
 }
 
+
 #dCompimg {
-    margin-left: 25%;
     padding-top: 20px;
     padding-bottom: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
