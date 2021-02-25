@@ -77,12 +77,12 @@ button:hover {
 }
 
 h2 {
-   font-size: 48px;
+   font-size: 45px;
    color: #51bfbd;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 strong {
@@ -100,9 +100,9 @@ div {
 }
 
 footer {
-    grid-row: 5;
-    grid-column-start: 1;
-    grid-column-end: 5;
+    position: fixed;
+    left: 42%;
+    top: 95%;
     text-align: center;
 }
 
@@ -124,9 +124,9 @@ img {
 }
 
 h5 {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 h6{
-    font-size: 24px;
+    font-size: 20px;
 }
