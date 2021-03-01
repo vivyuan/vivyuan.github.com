@@ -79,6 +79,10 @@ input {
 /* Added focus */
 input:focus {
     color:white;
+    font-size: 14px;
+    border-width: 2.8px;
+    animation: shine 2s ease-in-out infinite alternate;
+    
 }
 
 #submitButton {
@@ -150,10 +154,18 @@ a:hover {
 
 
 @keyframes shine {
-    0% {background-color: red;}
-    25%{background-color: yellow;}
-    50%{background-color: blue;}
-    100%{background-color: teal;}
+    0% {border-color: #ff6ec7;}
+    25%{border-color: #8f71ff;}
+    50%{border-color: #8bffff}
+    100%{border-color: #8f71ff;}
+    from {
+        text-shadow: 0 0 0.5px #ff6ec7, 0 0 1px #ff6ec7, 
+        0 0 1.5px #ff073a, 0 0 2px #ff073a, 0 0 2.5px #ff073a, 
+        0 0 3px #011ffd, 0 0 4px #ff6ec7;
+    } to {
+        text-shadow: 0 0 0.5px #ff6ec7, 0 0 2px #ff6ec7, 0 0 4px #ff073a,
+        0 0 6px #ff073a, 0 0 8px #011ffd, 0 0 9px #ff6ec7, 0 0 10px #ff6ec7;
+    }
 }
 
 img:hover {
