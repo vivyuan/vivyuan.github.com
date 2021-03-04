@@ -1,0 +1,215 @@
+body {
+    background-image: url(images/image5.png);
+    background-color: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#before {
+    margin: auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:auto;
+}
+
+h1 {
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    margin-top: 9%;;
+    margin-bottom: 70px;
+    color:rgb(214, 194, 194);
+    font-size: 32px;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #ff6ec7, 0 0 10px #ff6ec7, 
+        0 0 15px #ff073a, 0 0 20px #ff073a, 0 0 25px #ff073a, 
+        0 0 30px #011ffd, 0 0 35px #ff6ec7;
+    } to {
+        text-shadow: 0 0 10px #ff6ec7, 0 0 20px #ff6ec7, 0 0 30px #ff073a,
+        0 0 40px #ff073a, 0 0 50px #011ffd, 0 0 60px #ff6ec7, 0 0 70px #ff6ec7;
+    }
+}
+
+div {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 50%;
+}
+
+form {
+    grid-row: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+label {
+    margin-top: 10px;
+}
+
+label, input {
+    display: block;
+    color:#F22973;
+    font-size: 12px;
+}
+
+/* Changed sizing and images from Mad Libs */
+
+input {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-left: 13px;
+    padding-right: 13px;
+    width: 340px;
+    height: 27px;
+    color:#fff857;
+    background-color: #000000;
+    cursor: pointer;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1.8px;
+    border-color: #4D9999;
+}
+
+/* Added focus */
+input:focus {
+    color:white;
+    font-size: 14px;
+    border-width: 2.8px;
+    animation: shine 2s ease-in-out infinite alternate;
+    
+}
+
+#submitButton {
+    margin-left: 30%;
+    display: inline;
+    color: #00FF6F;
+    border-style: solid;
+    border-width: 1.8px;
+    width: 80px;
+    height: 27px;
+    border-color: #00FF6F;
+}
+
+#submitButton:hover {
+    cursor: pointer;
+    background-color: #ff6ec7;
+    color: black;
+    border-style: none;
+    transition: 0.5s;
+}
+
+/* Added reset button for prototype1 based on digital comp */
+
+#clearForm {
+    display: inline;
+    color: #2C5DB6;
+    border-style: solid;
+    border-width: 1.8px;
+    width: 80px;
+    height: 27px;
+    border-color: #2C5DB6;
+}
+
+#clearForm:hover {
+    cursor: pointer;
+    background-color: #ff6ec7;
+    color: black;
+    border-style: none;
+    transition: 0.5s;
+}
+
+
+p {
+    color:whitesmoke;
+    font-size: 20px;
+    animation: glow 1s ease-in-out infinite alternate;
+    margin-left: 17%;
+}
+
+footer {
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    margin-top: 5%;
+}
+
+a{
+    font-size: 12px;
+    text-decoration: none;
+    color:#9c0d2a;
+}
+
+a:hover {
+    color:#ff6ec7;
+    transition: 0.7s;
+}
+
+
+
+@keyframes shine {
+    0% {border-color: #ff6ec7;}
+    25%{border-color: #8f71ff;}
+    50%{border-color: #8bffff}
+    100%{border-color: #8f71ff;}
+    from {
+        text-shadow: 0 0 0.5px #ff6ec7, 0 0 1px #ff6ec7, 
+        0 0 1.5px #ff073a, 0 0 2px #ff073a, 0 0 2.5px #ff073a, 
+        0 0 3px #011ffd, 0 0 4px #ff6ec7;
+    } to {
+        text-shadow: 0 0 0.5px #ff6ec7, 0 0 2px #ff6ec7, 0 0 4px #ff073a,
+        0 0 6px #ff073a, 0 0 8px #011ffd, 0 0 9px #ff6ec7, 0 0 10px #ff6ec7;
+    }
+}
+
+img:hover {
+    transform: rotate(-10deg) scale(1.1);
+    transition: 0.5s;
+}
+
+article {
+    height: max-content;
+    width: 500;
+    margin: auto;
+    padding: 50px;
+    background-color: white;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    visibility: hidden;
+    
+}
+article p {
+    font-size: 14px;
+    width: 400px;
+    height: 290px;
+    padding-top: 20px;
+    line-height: 30px;
+    margin: auto;
+    text-align: left;
+    
+}
+
+article button{
+    font-size: 14px;
+    width: 100px;
+    padding:6px;
+    border-radius: 25px;
+    border: 1px solid #8f71ff;
+    text-align: center;
+    background-color: black;
+    color: #8f71ff;
+    margin-left: 38%;
+    margin-right: 50%;
+}
+
+article button:hover {
+    transform: scale(1.3);
+}
