@@ -45,5 +45,15 @@
         document.getElementById("before").style.visibility = "visible";
     });
 
+    window.onload = function() {
+        alert("Hello, Welcome!");
+        alert("Please complete the following four tasks, take notes if you need to");
+        alert("Task 1: Fill out the form");
+        alert("Task 2: Try to clear out the form and retype");
+        alert("Task 3: Submit your answer");
+        alert("Task 4: Restart the process");
+        alert("Thank you for participating, let's do this!");
+    }
+
 
 }());
