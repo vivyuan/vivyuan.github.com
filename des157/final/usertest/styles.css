@@ -190,7 +190,7 @@ article {
     background-size: 480px;
     background-repeat: repeat;
     background-position-x: center;
-    height: max-content;
+    height: inherit;
     margin: auto;
     padding: 50px;
     border-radius: 25px;
