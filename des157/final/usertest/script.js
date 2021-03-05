@@ -17,7 +17,7 @@
 
         // Below are for the results
         if(noun1 && noun2 && adj && verb && shoes) {
-            myResult = `Yay!  ${noun1} will be wearing a ${noun2} top, ${adj} bottoms, 
+            myResult = `<h2>Yay!</h2>  ${noun1} will be wearing a ${noun2} top, ${adj} bottoms, 
             and carrying a ${verb} bag to the party. Oh! by the way, ${noun1} is going to 
             put on some ${shoes} shoes before leaving to the party. The party is going 
             to be fun!`;
