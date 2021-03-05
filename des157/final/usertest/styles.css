@@ -25,6 +25,7 @@ h1 {
 
 h2 {
     text-align: center;
+    font-size: 24px;
 }
 
 @keyframes glow {
@@ -38,17 +39,17 @@ h2 {
     }
 }
 
-div {
+#image {
     grid-row: 2;
     grid-column-start: 1;
     grid-column-end: 2;
-    margin-left: 55%;
 }
 
 form {
     grid-row: 2;
     grid-column-start: 2;
     grid-column-end: 3;
+    margin-left: 5.7%;
 }
 
 label {
@@ -56,26 +57,26 @@ label {
 }
 
 label, input {
-    display: block;
     color:#F22973;
     font-size: 12px;
+    display: block;
 }
 
 /* Changed sizing and images from Mad Libs */
 
 input {
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 1.2%;
+    margin-bottom: 3.9%;
     padding-left: 13px;
     padding-right: 13px;
-    width: 340px;
-    height: 27px;
+    width: 170px;
+    height: 22px;
     color:#fff857;
     background-color: #000000;
     cursor: pointer;
     border-radius: 50px;
     border-style: solid;
-    border-width: 1.8px;
+    border-width: 1px;
     border-color: #4D9999;
 }
 
@@ -89,16 +90,17 @@ input:focus {
 }
 
 #submitButton {
-    margin-left: 30%;
-    display: inline;
+    margin-left: 31px;
+    display: inline-block;
     color: #00FF6F;
     border-style: solid;
-    border-width: 1.8px;
+    border-width: 1px;
     width: 80px;
-    height: 27px;
+    height: 23px;
     border-color: #00FF6F;
     animation: none;
 }
+
 
 #submitButton:hover {
     cursor: pointer;
@@ -112,12 +114,12 @@ input:focus {
 
 #clearForm {
     display: inline;
-    color: #2C5DB6;
+    color: #fdc200;
     border-style: solid;
-    border-width: 1.8px;
+    border-width: 1px;
     width: 80px;
-    height: 27px;
-    border-color: #2C5DB6;
+    height: 23px;
+    border-color: #fdc200;
     animation: none;
 }
 
@@ -142,7 +144,7 @@ footer {
     grid-column-start: 1;
     grid-column-end: 4;
     text-align: center;
-    margin-top: 4.5%;
+    margin-top: 5%;
 }
 
 a{
@@ -155,7 +157,6 @@ a:hover {
     color:#ff6ec7;
     transition: 0.7s;
 }
-
 
 
 @keyframes shine {
@@ -173,6 +174,11 @@ a:hover {
     }
 }
 
+img {
+    display: block;
+    margin-left: 62%;
+    
+}
 
 img:hover {
     transform: rotate(-10deg) scale(1.1);
@@ -180,10 +186,15 @@ img:hover {
 }
 
 article {
+    background-image: url(images/image1.png);
+    background-size: 480px;
+    background-repeat: repeat;
+    background-position-x: center;
     height: max-content;
     margin: auto;
     padding: 50px;
     border-radius: 25px;
+    border-width: 1px;
     border-color: #4D9999;
     border-style: solid;
     background-color: black;
@@ -192,9 +203,9 @@ article {
     left: 50%;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
-    visibility: hidden;
-    
+    visibility: hidden; 
 }
+
 article p {
     font-size: 14px;
     width: 400px;
@@ -203,22 +214,32 @@ article p {
     line-height: 30px;
     margin: auto;
     text-align: left;
-    
 }
 
 #playAgain{
     font-size: 14px;
     width: 100px;
+    height: 30px;
     padding:6px;
-    border-radius: 25px;
-    border: 1px solid #8f71ff;
+    border-radius: 29px;
+    background-color: black;
+    border: 1px solid #a186ff;
     text-align: center;
-    background-color:black;
-    color: #8f71ff;
+    color: #a186ff;
     margin-left: 38%;
     margin-right: 50%;
 }
 
 #playAgain:hover {
-    transform: scale(1.3);
+    transform: scale(1.1);
+    background-color: #8f71ff;
+    color: black;
 }
+
+::placeholder {
+    color: gray;
+    opacity: 0.8;
+    font-size: 12px;
+}
+
+
