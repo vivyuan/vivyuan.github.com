@@ -75,5 +75,12 @@ footer {
     margin-right: auto;
 }
 
+#resultimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
 
 
