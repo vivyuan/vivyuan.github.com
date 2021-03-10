@@ -4,7 +4,7 @@
     const form1 = document.querySelector('#form1');
     const article1= document.querySelector('#article1');
     const playAgain = document.querySelector('#playAgain');
-    const resultSound = new Audio('media/resultmusic.mp3');
+    const resultSound = new Audio('media/resultmusic.mp3'); //audio sources see sources page
     let eachField= [];
 
     form1.addEventListener('submit', function(event){
@@ -18,7 +18,7 @@
 
         // Below are for the results
         if(noun1 && noun2 && adj && verb && shoes) {
-            resultSound.play();
+            resultSound.play(); //soundtrack starts playing
             myResult = `<h2>Yay!</h2>  ${noun1} will be wearing a ${noun2} top, ${adj} bottoms, 
             and carrying a ${verb} purse to the party. Oh! by the way, ${noun1} is going to 
             put on some ${shoes} shoes before leaving to the party. The party is going 
@@ -42,8 +42,8 @@
     });
 
     playAgain.addEventListener('click', function(event){
-        resultSound.pause();
-        resultSound.currentTime = 0;
+        resultSound.pause(); //soundtrack stops playing
+        resultSound.currentTime = 0; //soundtrack will restart during next play
         event.preventDefault();
         document.getElementById("article1").style.visibility = "hidden";
         document.getElementById("before").style.visibility = "visible";

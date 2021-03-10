@@ -243,9 +243,10 @@ article p {
     font-size: 12px;
 }
 
-#disclaimer {
+h3 {
     animation: none;
-    text-align: left;
+    text-align: center;
+    color: #64b6b6;
 }
 
 
