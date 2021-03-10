@@ -75,7 +75,28 @@ footer {
     margin-right: auto;
 }
 
-#resultimg {
+#resultimg1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+#resultimg2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+#resultimg3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+#resultimg4 {
     display: block;
     margin-left: auto;
     margin-right: auto;
